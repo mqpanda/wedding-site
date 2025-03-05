@@ -85,6 +85,17 @@ h2 {
   }
 }
 
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* Элемент появляется слева */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Элемент на своем месте */
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -105,10 +116,23 @@ h2 {
   }
 }
 
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px); /* Элемент появляется справа */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Элемент на своем месте */
+  }
+}
+
 .guests {
   max-width: 315px;
 
   margin: 0 auto;
+  opacity: 0;
+  animation: fade-in-left 1s ease-out forwards 0.9s;
 }
 
 .and {
@@ -152,9 +176,16 @@ h4 {
   background: black;
   margin: 0 auto;
   text-align: center;
+  opacity: 0;
+  animation: fade-in 1.5s ease-out forwards 1.2s;
 }
 
 .text-container {
   position: relative;
   display: inline-block;
+}
+
+.timing {
+  opacity: 0;
+  animation: fade-in-right 1s ease-out forwards 0.9s;
 }
