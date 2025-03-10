@@ -1,13 +1,15 @@
-body {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #f5f5f5;
+html,
+body,
+.container {
+  height: 100%;
   margin: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
-
 .welcome-block {
   display: flex;
   justify-content: space-between;
@@ -70,8 +72,12 @@ h2 {
 
 .photo {
   width: 100%;
+  max-width: 425px;
   opacity: 0;
   animation: fade-in 1.5s ease-out forwards 1.2s;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes fade-in-up {
@@ -129,7 +135,7 @@ h2 {
 
 .guests {
   max-width: 315px;
-
+  text-align: center;
   margin: 0 auto;
   opacity: 0;
   animation: fade-in-left 1s ease-out forwards 0.9s;
@@ -140,7 +146,8 @@ h2 {
   font-family: "Ephesis", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px !important;
+  font-size: 25px !important;
+  text-transform: lowercase;
 }
 
 h3 {
@@ -155,10 +162,11 @@ p {
   font-family: Montserrat;
   font-size: 13px;
   letter-spacing: 2%;
+  text-align: center;
 }
 
 .names {
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 
 h4 {
@@ -181,11 +189,176 @@ h4 {
 }
 
 .text-container {
-  position: relative;
-  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
 }
 
 .timing {
   opacity: 0;
   animation: fade-in-right 1s ease-out forwards 0.9s;
+}
+
+.grey {
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.timing-time {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #54574d;
+  margin: 0;
+}
+
+.timing-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.timing-element {
+  margin: 15px 0;
+}
+
+.details-block {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.green-block {
+  background-color: #54574d;
+  max-width: 354px;
+  max-height: 429px;
+  margin: 20px auto;
+  border-radius: 25px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 2%;
+  color: #ffffff;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  max-width: 285px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.details:last-child {
+  margin-bottom: 0;
+}
+
+.circles {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: -20px; /* Перекрытие кругов */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: #1a1a1a;
+}
+.dark-gray {
+  background-color: #4c4c44;
+}
+.olive {
+  background-color: #9a9b80;
+}
+.light-gray {
+  background-color: #e2e3da;
+}
+.white {
+  background-color: #f6f6f5;
+}
+.gray {
+  background-color: #d8d8d8;
+}
+
+.circle:first-child {
+  margin-left: 0; /* Убираем отрицательный margin у первого */
+}
+
+.circle:last-child {
+  margin-right: 0; /* Можно добавить, если контейнер ограничен по ширине */
+}
+
+.add-container {
+  margin: 0 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.telegram-btn {
+  border: 0;
+  width: 200px;
+  height: 30px;
+  letter-spacing: 0.5px;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+  background-color: #54574d;
+  color: #ffffff;
+  border-radius: 26px;
+  margin: 20px 0;
+}
+
+.location-info {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #54574d;
+}
+
+.location-block {
+  margin: 0 15px;
+}
+
+.location-time {
+  margin-bottom: 20px;
+}
+
+.end {
+  font-family: Montserrat;
+  text-transform: uppercase;
+
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  padding-bottom: 35px;
+}
+
+.telegram {
+  text-decoration: none;
+  color: #ffffff;
 }
