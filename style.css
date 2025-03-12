@@ -255,7 +255,7 @@ h4 {
 }
 
 .details {
-  max-width: 285px;
+  max-width: 294px;
   margin: 0 auto;
   margin-bottom: 35px;
 }
@@ -311,7 +311,7 @@ h4 {
 }
 
 .add-container {
-  margin: 0 20px;
+  margin: 0 auto;
   text-align: center;
   justify-content: center;
 }
@@ -328,7 +328,7 @@ h4 {
   background-color: #54574d;
   color: #ffffff;
   border-radius: 26px;
-  margin: 20px 0;
+  margin: 20px 0px 0px 0px;
 }
 
 .location-info {
@@ -344,10 +344,6 @@ h4 {
   margin: 0 15px;
   margin-bottom: 0;
   margin-top: 10px;
-}
-
-.location-time {
-  margin-bottom: 20px;
 }
 
 .end {
@@ -375,4 +371,26 @@ h4 {
   max-width: 315px;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.location-add {
+  margin: 5px 0;
+}
+
+.telegram-text {
+  max-width: 356px;
+}
+
+.dresscode-text {
+  max-width: 356px;
+  margin: 10px auto;
+}
+
+.telegram-padding {
+  padding: 40px 0px;
 }
