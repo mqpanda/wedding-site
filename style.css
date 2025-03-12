@@ -342,6 +342,8 @@ h4 {
 
 .location-block {
   margin: 0 15px;
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .location-time {
@@ -361,4 +363,16 @@ h4 {
 .telegram {
   text-decoration: none;
   color: #ffffff;
+}
+
+.black-text {
+  color: #000000;
+}
+
+.yandex-map {
+  position: relative;
+  overflow: hidden;
+  max-width: 315px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
